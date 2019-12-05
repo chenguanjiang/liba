@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试</title>
+</head>
+<body>
+    <div>
+        <img id="img" src="../img/1.jpg" width="300px">
+    </div>
+    <ul>
+        <li>
+            <img class="icon" src="../img/1.jpg" >
+        </li>
+        <li>
+            <img class="icon" src="../img/2.jpg" >
+        </li>
+        <li>
+            <img class="icon" src="../img/3.jpg" >
+        </li>
+
+    </ul>
+    <script>
+        window.onload=function () {
+            var img=document.getElementById("img");
+            var icons=document.getElementsByClassName("icon")
+            console.log(icons);
+            for(var i=0;i<icons.length;i++){
+                var icon=icons[i];
+                console.log(icon);
+                icon.onclick=function () {
+                    img.setAttribute("src",this.src)
+                }
+            }
+        };
+    </script>
+
+    <style>
+        ul{
+            padding: 0;
+            font-size: 0px;
+        }
+        ul li{
+            display: inline-block;
+        }
+        li img{
+            width:100px;
+            height:100px;
+        }
+        div img{
+            width: 300px;
+            height: 200px;
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试</title>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+    <div class="app1">
+        <my_temp1></my_temp1>
+        <my_temp1></my_temp1>
+    </div>
+    <div class="app2">
+        <my_temp1></my_temp1>
+        <my_temp1></my_temp1>
+    </div>
+    <script>
+        // //创建组建构造器
+        // var temp1=Vue.extend({
+        //     //1.1 模版选项
+        //     template:'<div><input type="date"><p>今天天气很好</p></div>'
+        // });
+        //
+        // //注册全局组件：
+        // Vue.component('my_temp1',temp1);
+
+        Vue.component('my_temp1',{
+            template:'<div>' +
+                '<input type="text">' +
+                '<p>今天天气不错</p>' +
+                '</div>'
+        });
+
+        var mv=new Vue({
+            el:'.app1',
+            data:{
+                message:"我喜欢"
+            }
+        });
+        new Vue({
+           el:'.app2'
+        });
+    </script>
+</body>
+</html>

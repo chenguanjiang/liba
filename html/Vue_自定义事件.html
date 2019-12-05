@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue_自定义事件</title>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+    <div class="app1">
+        <btn1 @getcount="getTotle"></btn1>
+        <btn1 @getcount="getTotle"></btn1>
+        <btn1 @getcount="getTotle"></btn1>
+        <p>总共点击{{total}}次</p>
+    </div>
+    <template id="btn1">
+        <button @click="getcount">点击了：{{count}}次</button>
+    </template>
+
+    <script>
+        Vue.component('btn1',{
+            template:'#btn1',
+            data:function() {
+                return {count:0};
+                },
+            methods:{
+                getcount:function () {
+                    this.count++;
+                    this.$emit('getcount');
+                }
+            }
+        });
+
+        var mv=new Vue({
+            el:'.app1',
+            data:{
+                total:0
+            },
+            methods:{
+                getTotle:function () {
+                    this.total++;
+                }
+            }
+        });
+    </script>
+</body>
+</html>

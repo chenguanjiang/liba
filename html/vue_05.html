@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="../js/vue.js"></script>
+<body>
+    <div class="app1">
+        <temp1></temp1>
+    </div>
+
+    <template id="temp1">
+        <button @click="msg++">点击：{{msg}}次</button>
+    </template>
+    <script>
+        Vue.component('temp1',{
+            template:'#temp1',
+            data:function () {
+                return {msg:0};
+            }
+        });
+        new Vue({
+            el:".app1"
+        })
+    </script>
+</body>
+</html>

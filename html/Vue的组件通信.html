@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue的组件通信</title>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+    <div class="app1">
+        <temp1 :msg="msg" :imgsrc="imgsrc"></temp1>
+    </div>
+
+    <template id="temp1">
+        <div>
+            <p>{{msg}}</p>
+            <img :src="imgsrc" width="600">
+        </div>
+    </template>
+
+    <script>
+        Vue.component('temp1',{
+           template:'#temp1',
+           props:['msg','imgsrc']
+        });
+
+        var mv=new Vue({
+            el:'.app1',
+            data:{
+                msg:'今天天气很好',
+                imgsrc:'../img/2.jpg'
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue-router</title>
+</head>
+<script src="../js/vue.js"></script>
+<script src="../js/vue-router.js"></script>
+<style type="text/css">
+    .app{
+        background-color: #c3c3c3;
+        width: 80%;
+        text-align: center;
+        margin: auto;
+    }
+    #one{
+        margin: 20px;
+        padding: 20px;
+    }
+</style>
+<body>
+    <div class="app">
+        <div id="one">
+            <h2>导航：</h2>
+            <router-link :to="{name:'h5'}">H5</router-link>
+            <router-link :to="{name:'java'}">Java</router-link>
+            <router-link :to="{name:'python'}">Python</router-link>
+        </div>
+        <div id="two">
+            <router-view></router-view>
+        </div>
+    </div>
+
+    <template id="h5">
+        <div>
+            <h2>h5技术</h2>
+            <img src="../img/1.jpg" width="200px">
+            <p>欢迎来到h5的世界</p>
+            <ul>
+                <li>
+                    <router-link :to="{name:'basic'}">基础</router-link>
+                </li>
+                <li>
+                    <router-link :to="{name:'advance'}">进阶</router-link>
+                </li>
+            </ul>
+            <div>
+                <router-view></router-view>
+            </div>
+        </div>
+    </template>
+
+    <template id="basic">
+        <div>
+            <h3>基础班</h3>
+            <img src="../img/1.jpg" width="150px">
+            <p>欢迎来到基础班</p>
+        </div>
+    </template>
+
+    <template id="advance">
+        <div>
+            <h3>进阶班</h3>
+            <img src="../img/1.jpg" width="150px">
+            <p>欢迎来到进阶班</p>
+        </div>
+    </template>
+
+    <template id="java">
+        <div>
+            <h2>java技术</h2>
+            <img src="../img/2.jpg" width="200px">
+            <p>欢迎来到java的世界</p>
+        </div>
+    </template>
+
+    <template id="python">
+        <div>
+            <h2>python技术</h2>
+            <img src="../img/3.jpg" width="200px">
+            <p>欢迎来到python的世界</p>
+        </div>
+    </template>
+
+    <script>
+        const h5=Vue.extend({
+            template:'#h5'
+        });
+        const basic=Vue.extend({
+            template:'#basic'
+        });
+        const advance=Vue.extend({
+            template:'#advance'
+        });
+        const java=Vue.extend({
+            template:'#java'
+        });
+        const python=Vue.extend({
+            template:'#python'
+        });
+
+        const routes=[
+            {path:'/h5',name:'h5',component:h5,
+                children:[
+                    {path:'basic',name:'basic',component:basic},
+                    {path:'advance',name:'advance',component:advance},
+                    {path:'/',redirect: 'basic'}
+                ]
+        },
+            {path:'/java',name:'java',component:java},
+            {path:'/python',name:'python',component:python},
+            {path:'/',redirect:'/h5'}
+        ]
+
+        const router=new VueRouter({
+            routes
+        })
+
+        new Vue({
+            router
+        }).$mount('.app');
+    </script>
+</body>
+</html>

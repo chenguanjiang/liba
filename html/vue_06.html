@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue</title>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <quanju :message="msg"></quanju>
+        <div>{{msg}}</div>
+    </div>
+
+
+    <script>
+        Vue.component('quanju',{
+            props:["message"],
+            template:`
+            <div>
+               <button @mouseover="myhandle()">按钮</button>
+               <span>{{message}}</span>
+            </div>
+            `,
+            data(){
+                return{
+                    msg:"hello! gjchen",
+                }
+            },
+            methods:{
+                myhandle(){
+                    this.msg="bye bye";
+                }
+            }
+        })
+
+        const vm=new Vue({
+            el:"#app",
+            data:{
+                msg:"vue shili"
+            },
+            components:{
+                jubu:{
+                    props:["msg"],
+                    template: `
+                    <div>
+                        <button @click="myfun">按钮</button>
+                        <span>{{msg}}</span>
+                    </div>
+                    `,
+                    // data(){
+                    //     return{
+                    //         msg:"hello my gjchen"
+                    //     }
+                    // },
+                    methods:{
+                        myfun(){
+                            this.msg="good bye!"
+                        }
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+</html>

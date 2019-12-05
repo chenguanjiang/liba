@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+    <div class="app1">
+        <p v-if="score>=90">优秀</p>
+        <p v-else-if="90>score && score>=80">良好</p>
+        <p v-else-if="80>score && score>=60">及格</p>
+        <p v-else>不及格</p>
+        <input type="text" v-model="score">
+    </div>
+        <script>
+            var mv=new Vue({
+                el:'.app1',
+                data:{
+                    message:"身高大于1.5米",
+                    show:true,
+                    hide:false,
+                    height:1.7,
+                    score:0
+                }
+            });
+        </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>父子组件</title>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+    <div class="app1">
+        <parant></parant>
+        <my_child1></my_child1>
+    </div>
+    <script>
+        let Child1=Vue.extend({
+            template:`
+                <img src="../img/1.jpg" width="600px">
+            `
+        });
+        let Child2=Vue.extend({
+            template:`
+                <p>这里风景真美</p>
+            `
+        });
+
+        Vue.component('my_child1',Child1);
+
+        Vue.component('parant',{
+            components:{
+                'my_child1':Child1,
+                'my_child2':Child2
+            },
+            template:`
+                <div>
+                    <p>我是父组件</p>
+                    <my_child1></my_child1>
+                    <my_child2></my_child2>
+                </div>
+            `
+        });
+
+        new Vue({
+            el:'.app1',
+            data:{
+                message:"我喜欢"
+            }
+        });
+        </script>
+</body>
+</html>

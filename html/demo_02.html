@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../jquery-1.12.4.js"></script>
+</head>
+<body>
+    <script type="text/html">
+        $(document).ready(function(){
+            $('button').click(function(){
+                $('p').toggle();
+            });
+        });
+    </script>
+    <script>
+//        $(function(){
+//            $('button').click(function(){
+//                $('#p1').fadeIn(5000);
+//                $('.p2').fadeIn("fast");
+//                $('#p3').fadeIn("slow");
+//            });
+//        });
+        $(function(){
+            $('button').click(function(){
+                $('#p1').fadeOut('fast');
+                $('.p2').fadeOut(3000);
+                $('#p3').fadeToggle();
+            });
+        });
+    </script>
+    <p id="p1" style="width: 80px;height: 80px;background-color: aqua;">段落1</p>
+    <p class="p2" style="width: 80px;height: 80px;background-color: blueviolet;">段落2</p>
+    <p id="p3" style="width: 80px;height: 80px;background-color: darkred;">段落3</p>
+    <button>按钮</button>
+</body>
+</html>

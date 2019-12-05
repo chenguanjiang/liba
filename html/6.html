@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #box{
+            background-color: red;
+            width: 400px;
+            height: 400px;
+        }
+        #box>.inner_box{
+            background-color: chartreuse;
+            height: 100%;
+            float: left;
+            line-height: 400px;
+            vertical-align: middle;
+        }
+        #box>.inner_box>img{
+            vertical-align: middle;
+        }
+        #box>.inner_box>span{
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div class="inner_box">
+            <img src="./inner_html/image/weather.png">
+            <span>天气不错</span>
+        </div>
+    </div>
+</body>
+</html>

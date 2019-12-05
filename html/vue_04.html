@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学习</title>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+        <div class="app1">
+            <p>{{message}}</p>
+            <p>函数：{{reverseStr()}}</p>
+            <p>计算属性：{{reverseStr1}}</p>
+        </div>
+            <script>
+                var mv=new Vue({
+                    el:'.app1',
+                    data:{
+                        message:"我喜欢"
+                    },
+                    methods:{
+                        reverseStr:function () {
+                            return this.message.split('').reverse().join('');
+                        }
+                    },
+                    computed:{
+                        reverseStr1:function() {
+                            return this.message.split('').reverse().join('');
+                        }
+                    }
+                });
+            </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue的实名slot</title>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+    <div class="app1">
+        <my_computer>
+            <p slot="cpu">我是cpu</p>
+            <img slot="gpu" src="../img/1.jpg" width="600px">
+            <div slot="memory">我是内存条</div>
+            <input slot="hard_disk" type="color">
+        </my_computer>
+    </div>
+
+    <template id="my_computer">
+        <div>
+            <slot name="cpu">这是cpu插槽</slot>
+            <slot name="gpu">这是gpu插槽</slot>
+            <slot name="memory">这是内存插槽</slot>
+            <slot name="hard_disk">这是硬盘插槽</slot>
+        </div>
+    </template>
+    <script>
+        Vue.component('my_computer',{
+            template:'#my_computer'
+        });
+        new Vue({
+            el:'.app1',
+            data:{
+                message:"我喜欢"
+            }
+        });
+    </script>
+</body>
+</html>

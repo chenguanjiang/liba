@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script type="text/html">
+    function fib(n){
+        var a=1;b=1;
+        var tmp;
+        if (n===1){
+            return 1;
+        }
+        else if(n===2){
+            return 1;
+        }
+        for(i=1;i<=n-2;i++){
+            tmp=b;
+            b=a+b;
+            a=tmp;
+        }
+        return b;
+    }
+    console.log(fib(40));
+</script>
+<script type="text/html">
+    function say(con,n) {
+        if(n===0){
+            return
+        }
+        else{
+            console.log(con+'\n');
+            n--;
+            say(con,n);
+        }
+    }
+    say("hello",8)
+</script>
+<script>
+//    function fn(){
+//       var name="aaa";
+//    }
+//    fn();
+//    console.log(name);
+//{
+//    var num=5;
+//}
+//    console.log(num);
+
+//console.log(fn);
+//function fn(){
+//    console.log("我是函数");
+//}
+//var fn='我是变量';
+//console.log(fn);
+
+//    function fn(){
+//        var a=b=10;
+//    }
+//    fn();
+//    console.log(a);
+//    console.log(a);
+//    p={
+//        name:"aaa",
+//        age:10,
+//        eat:function(){
+//            console.log("eat rice");
+//        }
+//    }
+//p=[1,2,3,'d']
+p=new Array(3)[1,2,3]
+console.log(p);
+for (var key in p){
+        console.log(key, p[key]);
+    }
+</script>
+</body>
+</html>

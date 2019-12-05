@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo_01</title>
+    <script src="../jquery-1.12.4.js"></script>
+    <script>
+        $(function(){
+            $('#div1').click(function(){
+                $.get('http://localhost:8899/',function(data,status){
+                    if (status==='success'){
+                        $('#div1').html(data);
+                    }
+                    else{
+                        alert(status,data)
+                    }
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+<div id="div1">点我</div>
+<button>按钮</button>
+<div class="div2">隐藏</div>
+<div class="div3">显示</div>
+<script>
+    var btn=$('.div2');
+    btn.bind("click",function(){
+        $('button').hide();
+    })
+    $('.div3').bind('click',function(){
+        $('button').show();
+    })
+</script>
+</body>
+</html>

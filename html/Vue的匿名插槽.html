@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue的匿名slot</title>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+    <div class="app1">
+        <slot_temp>
+            <img src="../img/1.jpg" width="600px" title="好美">
+            <p>好美啊</p>
+            <p>不错</p>
+        </slot_temp>
+    </div>
+    <template id="my_slot">
+        <div>
+            <h2>这是插槽的头部</h2>
+            <slot>可以替换任何标签，默认显示提示的内容</slot>
+            <footer>插槽的尾部</footer>
+        </div>
+    </template>
+    <script>
+        Vue.component('slot_temp',{
+            template:'#my_slot'
+        });
+
+        var vm=new Vue({
+            el:'.app1',
+            data:{
+                message:"我喜欢"
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试</title>
+</head>
+<body>
+    <div id="box">
+        <img id="img" width="200px" height="200px">
+        <br>
+        <button id="prev">上一张</button>
+        <button id="next">下一张</button>
+    </div>
+    <script>
+        window.onload=function () {
+            var img=document.getElementById("img");
+            var prev=document.getElementById("prev");
+            var next=document.getElementById("next");
+            var currentIndex=1,minIndex=1,maxIndex=3;
+            img.setAttribute("src","../img/"+currentIndex+".jpg");
+
+            // img.setAttribute("src","../img/"+currentIndex+".jpg");
+            prev.onclick=function () {
+                if (currentIndex===1){
+                    currentIndex=maxIndex;
+                }
+                else{
+                    currentIndex--;
+                }
+                img.setAttribute("src","../img/"+currentIndex+".jpg");
+            };
+            next.onclick=function () {
+                if (currentIndex===3){
+                    currentIndex=minIndex;
+                }
+                else{
+                    currentIndex++;
+                }
+                img.setAttribute("src","../img/"+currentIndex+".jpg");
+            };
+        }
+    </script>
+</body>
+</html>

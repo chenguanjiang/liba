@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>template和script组件</title>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+    <div class="app1">
+        <temp1></temp1>
+    </div>
+    <template id="temp1">
+        <div>
+            <img src="../img/1.jpg" width="400px">
+            <p>风景真美</p>
+            <p>{{msg}}</p>
+        </div>
+    </template>
+<!--    <script type="text/x-handlebars-template" id="temp1">-->
+<!--        <div>-->
+<!--            <img src="../img/1.jpg" width="400px">-->
+<!--            <p>风景真美</p>-->
+<!--        </div>-->
+<!--    </script>-->
+
+<script>
+    Vue.component('temp1',{
+        template:'#temp1',
+        data:function () {
+            return {msg:'我是MT'};
+        }
+    })
+
+    new Vue({
+        el:'.app1'
+    });
+</script>
+</body>
+</html>

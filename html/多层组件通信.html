@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>多层组件通信</title>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+    <div class="app1">
+        <father_temp :f_imgsrc="imgsrc" :f_text="text"></father_temp>
+        <father_temp :f_imgsrc="imgsrc" :f_text="text"></father_temp>
+    </div>
+
+    <template id="img1">
+        <img :src="imgsrc" width="600px">
+    </template>
+
+    <template id="text1">
+        <p>{{text}}</p>
+    </template>
+
+    <template id="father_temp">
+        <div>
+        <child1 :imgsrc="f_imgsrc"></child1>
+        <child2 :text="f_text"></child2>
+        </div>
+    </template>
+
+    <script>
+        //子组件实例
+        let child1=Vue.extend({
+            template:'#img1',
+            props:['imgsrc']
+        });
+
+        //子组件实例
+        let child2=Vue.extend({
+            template: '#text1',
+            props:['text']
+        });
+
+        //注册父组件
+        Vue.component('father_temp',{
+            template:'#father_temp',
+            props:['f_text','f_imgsrc'],
+            components:{
+                'child1':child1,
+                'child2':child2
+            }
+        });
+
+        var vm=new Vue({
+            el:'.app1',
+            data:{
+                imgsrc: '../img/1.jpg',
+                text:'你好啊'
+            }
+        });
+    </script>
+</body>
+</html>

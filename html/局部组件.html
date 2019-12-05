@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+    <div class="app1">
+        <my_temp1></my_temp1>
+        <my_temp1></my_temp1>
+    </div>
+    <div class="app2">
+        <my_temp1></my_temp1>
+    </div>
+    <script>
+       new Vue({
+            el:'.app1',
+            data:{
+                message:"我喜欢"
+            },
+            components:{
+                'my_temp1':{
+                  template:`<div>
+                                <input type="color">
+                                <p>颜色</p>
+                            </div>`
+                }
+            }
+        });
+       new Vue({
+          el:'.app2'
+       });
+    </script>
+</body>
+</html>
