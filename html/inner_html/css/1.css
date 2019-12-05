@@ -89,8 +89,10 @@
 }
 /*---------------list-----------------*/
 #list{
-    height: 400px;
-    background-color: skyblue;
+    height: 600px;
+    width: 893px;
+    border: 1px solid #e0e0e0;
+    margin: 0 auto;
 }
 
 
