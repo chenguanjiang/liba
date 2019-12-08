@@ -94,7 +94,33 @@
     border: 1px solid #e0e0e0;
     margin: 0 auto;
 }
-
-
-
+#list>.list_head{
+    height: 40px;
+    border: 1px solid #ebebeb;
+    line-height: 40px;
+}
+#list>.list_head>.list_head_left{
+    float: left;
+    font-size: 0;
+}
+#list>.list_head>.list_head_right{
+    float: right;
+    margin-right: 10px;
+}
+#list>.list_head>.list_head_left>a{
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 10px;
+    display: inline-block;
+}
+#list>.list_head>.list_head_left>a>img,
+#list>.list_head>.list_head_left>a>span{
+    vertical-align: middle;
+}
+#list>.list_head>.list_head_left>a:hover{
+    background-color: #cccccc;
+}
+#list>.list_head>.list_head_right>a>img{
+    vertical-align: middle;
+}
 
