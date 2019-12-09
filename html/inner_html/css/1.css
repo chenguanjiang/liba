@@ -108,6 +108,7 @@
     margin-right: 10px;
 }
 #list>.list_head>.list_head_left>a{
+    line-height: 40px;
     text-decoration: none;
     font-size: 14px;
     margin-left: 10px;
@@ -123,4 +124,21 @@
 #list>.list_head>.list_head_right>a>img{
     vertical-align: middle;
 }
-
+#list>.list_content{
+    padding-top: 10px;
+}
+#list>.list_content>.list_content_left{
+    width: 575px;
+    height: 600px;
+    padding: 0px 5px 5px 10px;
+}
+#list>.list_content>.list_content_left>div {
+    border: 1px solid #ebebeb;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+#list>.list_content>.list_content_left>.list_content_left_cell1>h3 {
+    padding-bottom: 10px;
+}
+#list>.list_content>.list_content_left>.list_content_left_cell1>p {
+}

@@ -7,75 +7,99 @@
     <link rel="stylesheet" href="css/1.css">
 </head>
 <body>
-    <!--头部-->
-    <header id="header">
-        <div class="header_left">
+<!--头部-->
+<header id="header">
+    <div class="header_left">
             <span>
                 <img src="./image/weather.png" align="center">
             </span>
-            <span class="header_left_span">
+        <span class="header_left_span">
                 <span>|</span>
                 <a href="#">换肤</a>
                 <a href="#">消息</a>
             </span>
+    </div>
+    <div class="header_right">
+        <a href="#">新闻</a>
+        <a href="#">hao123</a>
+        <a href="#">地图</a>
+        <a href="#">视频</a>
+        <a href="#">贴吧</a>
+        <a href="#">学术</a>
+        <a href="#">登录</a>
+        <a href="#">设置</a>
+        <a href="#" class="more_product">更多产品</a>
+    </div>
+</header>
+<!--搜索-->
+<section id="content">
+    <div class="logo">
+        <img src="image/bd_logo1.png" alt="百度logo">
+    </div>
+    <div class="search">
+        <form id="form" action="http://www.baidu.com">
+            <input type="text" name="content" class="search_input">
+            <input type="submit" name="btn" class="search_submit" value="百度一下">
+        </form>
+    </div>
+</section>
+<!--列表-->
+<section id="list">
+    <!--  列表头部  -->
+    <div class="list_head">
+        <div class="list_head_left">
+            <a href="#">
+                <img src="./image/person_icon.png">
+                <span>我的关注</span>
+            </a>
+            <a href="#">
+                <span>推荐</span>
+            </a>
+            <a href="#">
+                <span>导航</span>
+            </a>
         </div>
-        <div class="header_right">
-            <a href="#">新闻</a>
-            <a href="#">hao123</a>
-            <a href="#">地图</a>
-            <a href="#">视频</a>
-            <a href="#">贴吧</a>
-            <a href="#">学术</a>
-            <a href="#">登录</a>
-            <a href="#">设置</a>
-            <a href="#" class="more_product">更多产品</a>
+        <div class="list_head_right">
+            <a href="#">
+                <img src="./image/setting_btn.png">
+            </a>
         </div>
-    </header>
-    <!--搜索-->
-    <section id="content">
-        <div class="logo">
-            <img src="image/bd_logo1.png" alt="百度logo">
-        </div>
-        <div class="search">
-            <form id="form" action="http://www.baidu.com">
-                <input type="text" name="content" class="search_input">
-                <input type="submit" name="btn" class="search_submit" value="百度一下">
-            </form>
-        </div>
-    </section>
-    <!--列表-->
-    <section id="list">
-        <!--  列表头部  -->
-        <div class="list_head">
-            <div class="list_head_left">
-                <a href="#">
-                    <img src="./image/person_icon.png">
-                    <span>我的关注</span>
-                </a>
-                <a href="#">
-                    <span>推荐</span>
-                </a>
-                <a href="#">
-                    <span>导航</span>
-                </a>
+    </div>
+    <!--  列表内容  -->
+    <div class="list_content">
+        <!--  内容左边  -->
+        <div class="list_content_left">
+            <div class="list_content_left_cell1">
+                <h3>生活不止苟且！还有诗和远方</h3>
+                <img src="./image/cell_1.jpg" alt="">
+                <img src="./image/cell_2.jpg" alt="">
+                <img src="./image/cell_3.jpg" alt="">
+                <p>百度新闻 12-09 11:36</p>
             </div>
-            <div class="list_head_right">
-                <a href="#">
-                    <img src="./image/setting_btn.png">
-                </a>
+            <div class="list_content_left_cell2">
+                <div class="cell_img">
+                    <img src="./image/cell_1.jpg" alt="">
+                </div>
+                <div class="cell_titlr">
+                    <h3>生活不止苟且！还有诗和远方</h3>
+                    <p>百度新闻 12-09 11:36</p>
+                </div>
+            </div>
+            <div class="list_content_left_cell3">
+                <div class="cell_img">
+                    <img src="./image/cell_1.jpg" alt="">
+                </div>
+                <div class="cell_titlr">
+                    <h3>生活不止苟且！还有诗和远方</h3>
+                    <p>百度新闻 12-09 11:36</p>
+                </div>
             </div>
         </div>
-        <!--  列表内容  -->
-        <div class="list_content">
-            <!--  内容左边  -->
-            <div class="list_content_left">
-                <div></div>
-            </div>
-            <!--  内容右边  -->
-            <div class="list_content_right">
-                <div></div>
-            </div>
+        <!--  内容右边  -->
+        <div class="list_content_right">
+            <div></div>
         </div>
-    </section>
+    </div>
+</section>
 </body>
 </html>
