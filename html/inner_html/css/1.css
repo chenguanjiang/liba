@@ -89,8 +89,8 @@
 }
 /*---------------list-----------------*/
 #list{
-    height: 600px;
-    width: 893px;
+    height: 800px;
+    width: 905px;
     border: 1px solid #e0e0e0;
     margin: 0 auto;
 }
@@ -130,7 +130,10 @@
 #list>.list_content>.list_content_left{
     width: 540px;
     height: 600px;
-    padding: 0px 5px 5px 10px;
+    padding: 0px 5px 0px 10px;
+    display: inline-block;
+    margin-top: 10px;
+    float: left;
 }
 #list>.list_content>.list_content_left>div {
     border: 1px solid #ebebeb;
@@ -166,4 +169,23 @@
     font-size: 12px;
     margin-top: 3px;
 }
-
+#list>.list_content>.list_content_right{
+    width: 350px;
+    padding-top: 10px;
+    display: inline-block;
+    margin-left: 10px;
+    float: right;
+}
+#list>.list_content>.list_content_right .right_head{
+    width: 350px;
+    height: 60px;
+    padding: 20px;
+}
+#list>.list_content>.list_content_right .right_head h4{
+    float: left;
+}
+#list>.list_content>.list_content_right .right_head div{
+    float: right;
+}
+#list>.list_content>.list_content_right .right_body ul {
+}
