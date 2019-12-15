@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#desc{
+    color: coral;
+    margin: 10px 0 0 10px;
+    font-weight: bolder;
+}
+.big_img{
+    margin: 10px 10px;
+}
+ul{
+    list-style: none;
+}
+ul>li{
+    float: left;
+    margin-left: 19px;
+}
+ul>li>img{
+    width: 100px;
+}

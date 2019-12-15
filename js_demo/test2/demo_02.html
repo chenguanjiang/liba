@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #logo{
+            width: 100px;
+            height: 100px;
+            background: url("../imag/logo.jpg");
+            position: fixed;
+            top: 50%;
+            left: 0;
+            background-color: skyblue;
+        }
+        #big_img{
+            position: absolute;
+            left: 110px;
+            top: -150px;
+        }
+        img{
+            display: none;
+        }
+    </style>
+    <script>
+        window.onload=function () {
+            var logo=document.getElementById("logo")
+            var img=document.getElementsByTagName("img")[0]
+            logo.onmouseover=function () {
+                img.style.display="block"
+            }
+            logo.onmouseout=function () {
+                img.style.display="none"
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="logo">
+        <div id="big_img">
+            <img src="../imag/1.jpg">
+        </div>
+    </div>
+</body>
+</html>
