@@ -113,6 +113,7 @@
     font-size: 14px;
     margin-left: 10px;
     display: inline-block;
+    color: #666;
 }
 #list>.list_head>.list_head_left>a>img,
 #list>.list_head>.list_head_left>a>span{
@@ -184,8 +185,27 @@
 #list>.list_content>.list_content_right .right_head h4{
     float: left;
 }
+#list>.list_content>.list_content_right .right_head img,
+#list>.list_content>.list_content_right .right_head span{
+    vertical-align: middle;
+}
 #list>.list_content>.list_content_right .right_head div{
     float: right;
 }
-#list>.list_content>.list_content_right .right_body ul {
+#list>.list_content>.list_content_right .right_body{
+    background-color: skyblue;
+    padding: 0 10px;
+}
+#list>.list_content>.list_content_right .right_body>ul>li {
+    list-style: none;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    font-size: 14px;
+    padding: 0 10px;
+}
+#list>.list_content>.list_content_right .right_body>ul>li>a{
+    text-decoration: none;
+    color: #666666;
 }
