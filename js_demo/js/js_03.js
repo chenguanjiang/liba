@@ -7,10 +7,11 @@ window.onload = function () {
 
     for (let i = 0; i < img_list.length; i++) {
         (function (i) {
-            img_list[i].onmouseover = function () {
-                desc.innerText = img_list[i].getAttribute("title");
-                var src = img_list[i].getAttribute("src")
-                console.log(src)
+            var img=img_list[i];
+            img.onmouseover = function () {
+                desc.innerText = img.getAttribute("title");
+                var src = img.getAttribute("src");
+                console.log(src);
                 big_img.setAttribute("src", src);
             }
         })(i)
