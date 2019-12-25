@@ -1,0 +1,18 @@
+#box1{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+#box2{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    position: relative;
+    left: 100px;
+    top:200px;
+}
+#box3{
+    width: 200px;
+    height: 200px;
+    background-color: purple;
+}
