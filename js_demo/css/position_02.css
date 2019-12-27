@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+}
+#main{
+    margin: 400px;
+    width: 800px;
+    height: 800px;
+    background-color: #c3c3c3;
+}
+#box1{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+#box2{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+#box3{
+    width: 200px;
+    height: 200px;
+    background-color: purple;
+    position: relative;
+}
+#box4{
+    width: 200px;
+    height: 200px;
+    background-color: skyblue;
+    position: absolute;
+    left: -200px;
+    top: -200px;
+}
