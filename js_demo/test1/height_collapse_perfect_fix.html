@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>高度塌陷完善</title>
+    <link rel="shortcut icon" href="../imag/logo.jpg" type="image/x-icon">
+    <style>
+        #case{
+            width: 100%;
+            border: 1px solid gold;
+        }
+        #case1{
+            width:100px;
+            height: 100px;
+            background-color: blue;
+            float: right;
+        }
+        #box1{
+            width: 400px;
+            height: 400px;
+            background-color: red;
+        }
+        #box2{
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            margin-top: 10px;
+        }
+        /* 1.解决高度塌陷问题（父元素最后加个空div标签） 2.解决垂直方向父子元素外边距重叠，子元素会把外边距传递给父元素（父元素前面添加个一个空的table标签）*/
+        .fix_collapse::before,
+        .fix_collapse::after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div id="case" class="fix_collapse">
+        <div id="case1" ></div>
+    </div>
+    <div id="box1" class="fix_collapse">
+<!--        <table></table>-->
+        <div id="box2"></div>
+    </div>
+</body>
+</html>

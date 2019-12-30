@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#box1{
+    width: 100%;
+    border: 1px solid red;
+    overflow: hidden;
+}
+#box2{
+    width: 10%;
+    height: 100px;
+    background-color: blue;
+    float: right;
+}
+#box3{
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    background-color: green;
+}

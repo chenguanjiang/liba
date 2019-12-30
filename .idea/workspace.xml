@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e31169a5-db60-4882-b5e3-f00fdd4b231c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js_demo/imag/xuebi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js_demo/test1/float_case.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js_demo/test1/xuebi_img.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js_demo/css/height_collapse.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js_demo/test1/height_collapse.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js_demo/test1/height_collapse1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js_demo/test1/height_collapse2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js_demo/test1/height_collapse_perfect_fix.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js_demo/test1/serial_number_selector.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -115,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577545018952</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="12-30 15:05">
+      <created>1577689560021</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1577689560021</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,7 +135,8 @@
     <MESSAGE value="12-27 15:34" />
     <MESSAGE value="12-28 00:43" />
     <MESSAGE value="12-28 22:56" />
-    <option name="LAST_COMMIT_MESSAGE" value="12-28 22:56" />
+    <MESSAGE value="12-30 15:05" />
+    <option name="LAST_COMMIT_MESSAGE" value="12-30 15:05" />
   </component>
   <component name="WindowStateProjectService">
     <state x="378" y="7" key="CommitChangelistDialog2" timestamp="1577545017400">
