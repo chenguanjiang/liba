@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动小练习</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+/**********************头部***************************/
+        #header{
+            width: 100%;
+            height: 130px;
+            background-color: red;
+        }
+/**********************内容***************************/
+        #content{
+            width: 100%;
+            height: 450px;
+            background-color: rgba(0,0,255,.6);
+            margin: 10px auto;
+        }
+        #content>.left{
+            width: 32%;
+            height: 100%;
+            float: left;
+            background-color: purple;
+            margin-right: 2%;
+        }
+        #content>.middle{
+            width: 32%;
+            height: 100%;
+            float: left;
+            background-color: goldenrod;
+            margin-right: 2%;
+        }
+        #content>.right{
+            width: 32%;
+            height: 100%;
+            float: right;
+            background-color: skyblue;
+        }
+/**********************尾部***************************/
+        #footer{
+            width: 100%;
+            height: 130px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <!--  头部  -->
+    <header id="header">头部</header>
+    <!--  内容  -->
+    <section id="content">
+        <div class="left">左边</div>
+        <div class="middle">中间</div>
+        <div class="right">右边</div>
+    </section>
+    <!--  尾部  -->
+    <footer id="footer">尾部</footer>
+</body>
+</html>

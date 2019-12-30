@@ -2,33 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e31169a5-db60-4882-b5e3-f00fdd4b231c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js_demo/bootstrap/css/bootstrap-theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js_demo/bootstrap/css/bootstrap-theme.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js_demo/bootstrap/css/bootstrap-theme.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js_demo/bootstrap/css/bootstrap-theme.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js_demo/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js_demo/bootstrap/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js_demo/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js_demo/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js_demo/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js_demo/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js_demo/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js_demo/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js_demo/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js_demo/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js_demo/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js_demo/bootstrap/js/npm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js_demo/css/mac_desktop.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js_demo/imag/desktop.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js_demo/imag/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js_demo/imag/file.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js_demo/imag/mac_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js_demo/imag/mac_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js_demo/imag/mac_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js_demo/imag/mac_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js_demo/imag/mac_5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js_demo/imag/mac_6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js_demo/test1/mac_desktop.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js_demo/imag/xuebi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js_demo/test1/float_case.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js_demo/test1/xuebi_img.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -72,23 +48,24 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\gjchen_work\code_soft\webstorm\workspace\liba\js_demo\imag" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\gjchen_work\code_soft\webstorm\workspace\liba\js_demo\imag" />
       <recent name="D:\gjchen_work\code_soft\webstorm\workspace\liba\js_demo" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\nodejs\workspace\liba\js_demo\imag" />
+      <recent name="D:\gjchen_work\code_soft\webstorm\workspace\liba\js_demo\imag" />
+    </key>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
+  <component name="RunDashboard">
+    <option name="ruleStates">
       <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
       </list>
     </option>
   </component>
