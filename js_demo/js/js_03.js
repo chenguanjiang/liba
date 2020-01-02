@@ -5,13 +5,12 @@ window.onload = function () {
     var img_list = fj.getElementsByTagName("img");
     console.log(img_list);
 
-    for (let i = 0; i < img_list.length; i++) {
+    for (var i = 0; i < img_list.length; i++) {
         (function (i) {
             var img=img_list[i];
             img.onmouseover = function () {
                 desc.innerText = img.getAttribute("title");
                 var src = img.getAttribute("src");
-                console.log(src);
                 big_img.setAttribute("src", src);
             }
         })(i)

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格和表单</title>
+    <link rel="shortcut icon" href="../imag/favicon.ico" type="image/x-icon">
+    <style>
+        #app{
+            margin: 50px auto;
+            width: 600px;
+        }
+        fieldset{
+            border: 1px solid coral;
+            width: 100%;
+        }
+        fieldset input{
+            height: 30px;
+            width: 200px;
+            margin: 10px 0;
+        }
+        table{
+            margin-top: 20px;
+            width: 100%;
+            text-align: center;
+            border: 1px solid coral;
+        }
+        table thead{
+            background-color: coral;
+            color: white;
+        }
+        table tr{
+            line-height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <!--  第一部分 -->
+        <fieldset>
+            <legend>学生目录手册</legend>
+            <div>
+                <span>姓名</span>
+                <input type="text" placeholder="请输入学生姓名">
+            </div>
+            <div>
+                <span>年龄</span>
+                <input type="number" placeholder="请输入学生年龄">
+            </div>
+            <div>
+                <span>性别</span>
+                <select>
+                    <option value="男">男</option>
+                    <option value="女">女</option>
+                </select>
+            </div>
+            <div>
+                <span>手机号码</span>
+                <input type="text" placeholder="请输入学生手机号码">
+            </div>
+            <div>
+                <input type="submit" value="创建新用户">
+            </div>
+        </fieldset>
+        <!-- 第二部分 -->
+        <table>
+            <thead>
+                <tr>
+                    <td>姓名</td>
+                    <td>年龄</td>
+                    <td>性别</td>
+                    <td>手机号码</td>
+                    <td>删除</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>张三</td>
+                    <td>20</td>
+                    <td>男</td>
+                    <td>13845621478</td>
+                    <td><button>删除</button></td>
+                </tr>
+                <tr>
+                    <td>李四</td>
+                    <td>30</td>
+                    <td>男</td>
+                    <td>13812341447</td>
+                    <td><button>删除</button></td>
+                </tr>
+                <tr>
+                    <td>王五</td>
+                    <td>40</td>
+                    <td>女</td>
+                    <td>13756874147</td>
+                    <td><button>删除</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
