@@ -4,7 +4,6 @@
     <list default="true" id="e31169a5-db60-4882-b5e3-f00fdd4b231c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js_demo/css/jianshu.css" beforeDir="false" afterPath="$PROJECT_DIR$/js_demo/css/jianshu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js_demo/test1/jianshu.html" beforeDir="false" afterPath="$PROJECT_DIR$/js_demo/test1/jianshu.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +94,7 @@
       <workItem from="1577588971679" duration="5290000" />
       <workItem from="1577632034172" duration="4571000" />
       <workItem from="1578015376025" duration="1352000" />
-      <workItem from="1578231892705" duration="6227000" />
+      <workItem from="1578231892705" duration="6354000" />
     </task>
     <task id="LOCAL-00001" summary="12-27 15:34">
       <created>1577432085485</created>
@@ -146,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578017017509</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="01-03 10:03">
+      <created>1578238230241</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1578238230241</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
