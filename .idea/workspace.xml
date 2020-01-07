@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e31169a5-db60-4882-b5e3-f00fdd4b231c" name="Default Changelist" comment="" />
+    <list default="true" id="e31169a5-db60-4882-b5e3-f00fdd4b231c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,7 +92,11 @@
       <workItem from="1577543778142" duration="6100000" />
       <workItem from="1577588971679" duration="5290000" />
       <workItem from="1577632034172" duration="4571000" />
-      <workItem from="1578015376025" duration="1352000" />
+      <workItem from="1578015376025" duration="2383000" />
+      <workItem from="1578032725843" duration="4816000" />
+      <workItem from="1578058937065" duration="40000" />
+      <workItem from="1578365813347" duration="260000" />
+      <workItem from="1578366096771" duration="524000" />
     </task>
     <task id="LOCAL-00001" summary="12-27 15:34">
       <created>1577432085485</created>
@@ -140,7 +147,21 @@
       <option name="project" value="LOCAL" />
       <updated>1578017017509</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="01-03 10:03">
+      <created>1578017230799</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1578017230799</updated>
+    </task>
+    <task id="LOCAL-00009" summary="01-03 21:41">
+      <created>1578058878088</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1578058878088</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,7 +172,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -164,28 +187,33 @@
     <MESSAGE value="12-30 15:05" />
     <MESSAGE value="12-02 20:28" />
     <MESSAGE value="01-03 10:03" />
-    <option name="LAST_COMMIT_MESSAGE" value="01-03 10:03" />
+    <MESSAGE value="01-03 21:41" />
+    <option name="LAST_COMMIT_MESSAGE" value="01-03 21:41" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="378" y="7" key="CommitChangelistDialog2" timestamp="1578017181050">
+    <state x="378" y="7" key="CommitChangelistDialog2" timestamp="1578058876994">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="378" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1578017181050" />
+    <state x="378" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1578058876994" />
+    <state x="148" y="66" key="DiffContextDialog" timestamp="1578366124136">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="148" y="66" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1578366124136" />
     <state x="550" y="168" key="FileChooserDialogImpl" timestamp="1577459837146">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="550" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1577459837146" />
-    <state x="362" y="146" key="Vcs.Push.Dialog.v2" timestamp="1578017042116">
+    <state x="362" y="146" key="Vcs.Push.Dialog.v2" timestamp="1578058969970">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="362" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1578017042116" />
+    <state x="362" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1578058969970" />
     <state x="526" y="147" key="VcsDiffUtil.ChangesDialog" timestamp="1577067395844">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="526" y="147" key="VcsDiffUtil.ChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1577067395844" />
-    <state x="481" y="204" key="git4idea.merge.GitPullDialog" timestamp="1578014254834">
+    <state x="481" y="204" key="git4idea.merge.GitPullDialog" timestamp="1578366368257">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="481" y="204" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1578014254834" />
+    <state x="481" y="204" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1578366368257" />
   </component>
 </project>
