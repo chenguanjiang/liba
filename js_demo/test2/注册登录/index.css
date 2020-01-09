@@ -1,0 +1,49 @@
+/*########通用样式########*/
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+.clearfix::before,
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+input,button{
+    outline: none;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-size: 1.6rem;
+}
+/*########头部样式########*/
+#app{
+    width: 50rem;
+    height: 60rem;
+    border: 0.1rem solid #e0e0e0;
+    /*background-color: red;*/
+    margin: 5rem auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
