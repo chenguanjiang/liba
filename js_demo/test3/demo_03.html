@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function showcars() {
+            var a=["丰田","奔驰","宝马","奥迪","本田","日产"];
+            var i;
+            var txt="";
+            for (i in a){
+                txt+=a[i]+"<br>";
+            }
+            document.getElementById("p").innerHTML=txt;
+        }
+        function showcars1(){
+            var a=["丰田","奔驰","宝马","奥迪","本田","日产"];
+            var txt="";
+            function show1(item,index) {
+                txt+=index+":"+item+" "
+            }
+            a.forEach(show1);
+            document.getElementById("p1").innerHTML=txt;
+        }
+        function showcars2(){
+            var a=["丰田","奔驰","宝马","奥迪","本田","日产"];
+            var i=0,txt="";
+            while (i<a.length){
+                txt+=a[i]+" "
+                i++;
+            }
+            document.getElementById("p2").innerText=txt
+        }
+        function showcars3(){
+            var a=["丰田","奔驰","宝马","奥迪","本田","日产"];
+            var txt="",i=0;
+            do{
+                txt+=a[i]+" ";
+                i++;
+            }
+            while (i<a.length);
+            document.getElementById("p3").innerHTML=txt;
+        }
+        function showcars4(){
+            var i=0,txt="";
+            var a=["丰田","奔驰","宝马","奥迪","本田","日产"];
+            while (a[i]){
+                txt+=a[i]+" "
+                i++
+            }
+            document.getElementById("p4").innerHTML=txt;
+        }
+        function showcars5(){
+            var txt="";
+            for (var i=0;i<=10;i++){
+                if(i==6){
+                    break;
+                }
+                if(i==3){
+                    continue;
+                }
+                txt+=i+" ";
+            }
+            document.getElementById("p5").innerHTML=txt;
+        }
+
+        window.onload=function () {
+            showcars();
+            showcars1();
+            showcars2();
+            showcars3();
+            showcars4();
+            showcars5();
+            a=[1,2,3,4]
+            b=a.constructor
+            console.log(b);
+            console.log(a.constructor.toString().indexOf("Array") > -1);
+            var c="hello my dear baby my dear heart!";
+            var d=c.replace("dear","honey");
+            console.log(d);
+            var e=c.replace(/dear/g,"honey");
+            console.log(e);
+            var f="Hello World!";
+            console.log(f.toUpperCase());
+            console.log(f.toLowerCase());
+            console.log(f.concat(" ","Good"," ","Day"));
+            var g="  Hello World   ";
+            console.log(g.trim());
+            var h="a b c d e f"
+            console.log(h.split(" "));
+            var k="a312423bs2132132d1dssdsdas21";
+            var objRegExp=/\d+/g;
+            console.log(objRegExp.test(k));
+            console.log("==============================");
+            var li=objRegExp.exec(k);
+            for (var i=0;i<li.length;i++){
+                console.log(li[i]);
+            }
+            console.log("==============================");
+            var arr=k.match(objRegExp);
+            for (var i=0;i<arr.length;i++){
+                console.log(arr[i]);
+            }
+            console.log("==============================");
+
+        };
+    </script>
+</head>
+<body>
+    <div>
+        <p id="p"></p>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+        <p id="p4"></p>
+        <p id="p5"></p>
+    </div>
+</body>
+</html>

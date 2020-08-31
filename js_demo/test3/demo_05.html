@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation</title>
+    <style>
+        body{
+            margin: 20px;
+            padding: 0;
+        }
+        #container{
+            margin-top: 20px;
+            height: 400px;
+            width: 400px;
+            background-color: yellowgreen;
+            position: relative;
+        }
+        #animation{
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            position: absolute;
+        }
+    </style>
+    <script>
+        window.onload=function () {
+            document.getElementById("btn").addEventListener("click",moveEle);
+        }
+        // function move(event,animation,pos) {
+        //     if (pos>=350){
+        //         window.clearInterval(event);
+        //     }
+        //     else{
+        //         pos++;
+        //         animation.style.top+=pos;
+        //         animation.style.left+=pos;
+        //         console.log(pos);
+        //     }
+        // }
+        function moveEle() {
+            var pos=0;
+            var animation=document.getElementById("animation");
+            var event=window.setInterval(move,1);
+            function move() {
+                if (pos>=350){
+                    window.clearInterval(event);
+                }
+                else{
+                    pos++;
+                    animation.style.top=pos+"px";
+                    animation.style.left=pos+"px";
+                    console.log(pos);
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>这是一个动画</h2>
+    <button id="btn">运行动画</button>
+    <div id="container">
+        <div id="animation"></div>
+    </div>
+</body>
+</html>

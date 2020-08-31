@@ -1,0 +1,3 @@
+hello ajax
+begin stady ajax
+o ye
